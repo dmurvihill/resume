@@ -1,0 +1,148 @@
+\documentclass[a4paper,10pt]{article}
+    \usepackage{fullpage}
+    \usepackage{enumitem}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[margin=0.9in]{geometry}
+    \textheight=10.1in
+    \pagestyle{empty}
+    %\cfoot{}
+    \raggedright
+\usepackage{color,hyperref}
+\definecolor{darkblue}{rgb}{0.0,0.0,0.3}
+\hypersetup{colorlinks,breaklinks,linkcolor=darkblue,urlcolor=darkblue,anchorcolor=darkblue,citecolor=darkblue}
+    \usepackage{relsize}
+\newcommand\Cpp{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{++}}}}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+    % END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {Dolan Murvihill}}\\
+    Results-oriented leader with a passion for delivering business success by making great software
+\end{center}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}} r}
+  27 Marney St. \#2       & \hspace{8mm}503 830 4363 \\
+  Cambridge, MA 02141      & \hspace{8mm}\url{https://github.com/dmurvihill}     
+\end{tabular*}\\
+\vspace{1mm}
+%==== Education ====%
+\header{Education}
+\textbf{Worcester Polytechnic Institute (WPI)}\hfill Worcester, MA\\
+BS, Computer Science, May 2015\\
+\vspace*{1mm}
+%==== Work Experience ====%
+\header{Experience}
+\textbf{EverQuote} \hfill Cambridge, MA\\
+\textit{Senior Quantitative Software Engineer} \hfill 2017-2018\\
+\textit{Quantitative Software Engineer} \hfill 2015-2017\\
+\vspace{-1mm}
+\begin{itemize} \itemsep -1pt
+	\item Co-creator and architect of the EverQuote \href{https://en.wikipedia.org/wiki/Real-time_bidding}{Real-Time Bidder}, a high-throughput real-time ad buyer, and its associated data pipeline.
+  \item Participated in every part of the software life cycle: AWS
+  environment setup, designing and writing the code, deployment,
+  managing operational issues.
+  \item Managed an intern who delivered a new ad server that is now generating
+  record revenue numbers (such as delivering 89\% of display revenue on
+  one of our top five revenue days ever).
+  \item Successfully agitated to adopt industry-standard software development
+  practices such as staging environments, unit tests, and daily
+  stand-up.
+  \item Recognized department-wide as an advocate for clean software design
+  and high code quality.
+\end{itemize}
+\vspace*{1mm}
+ 
+%==== Volunteer Experience ====%
+\header{Volunteer Experience}
+\textbf{Voter Choice Massachusetts} \hfill Boston, MA\\
+\textit{Director of Regions} \hfill 2017-present\\
+\begin{itemize} \itemsep -1pt
+\item Oversee our grassroots movement's progress toward a 2020 ballot initiative to adopt 
+  \href{http://www.fairvote.org/rcv}{Ranked Choice Voting} in Massachusetts.
+\item Support and advise six regional chapters across the state: North
+  Shore, Greater Boston, Central MA, Pioneer Valley, Greater Lowell, Cape and Islands.
+\item Identify talented volunteer leaders and help them establish new
+  chapters.
+\item Direct the development of high-production-value strategy literature
+  for local chapters.
+  \end{itemize}
+\textit{Director of Live Outreach} \hfill 2016-2017\\
+  \begin{itemize} \itemsep -2pt
+  \item Oversaw field outreach across five regions, involving 30 volunteers at over 12 events each month, resulting in 25x growth year over year:\
+  \begin{tabular*}{\textwidth}{l r r}
+   & \textbf{Nov. 2016} & \textbf{Nov. 2017}\\
+  Supporters & 250 & 8000\\
+  Volunteers & 50 & 1400\\
+  Active Volunteers & 3 & 100\\
+  \end{tabular*}
+  \item managed four directs and three peers located in Boston, Springfield, Worcester, Lowell, and Dartmouth.\\
+  \item Led a 30-volunteer outreach team at the 2017 Democratic State Convention that was instrumental in adding RCV to the Massachusetts Democratic Party platform.
+  \end{itemize}
+
+%==== Skills ====%
+\header{Skills}
+\begin{itemize} \itemsep -2pt
+    \item EverQuote management training program graduate
+    \item Spreadsheet wizard
+    \item Black Belt
+    \item Always gets the geography questions at trivia night.
+    \end{itemize}
+\end{document}
